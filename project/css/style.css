@@ -1,0 +1,285 @@
+body {
+  background: #001e38;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0 15px;
+  width: 700px;
+  margin: auto;
+  background-color: #60f4a0;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .landing img {
+    width: 150px !important;
+    bottom: 20%;
+    right: 5%;
+  }
+  .container {
+    width: 90%;
+  }
+  .landing {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  .header .link {
+    display: none;
+  }
+  img {
+    width: 100px !important;
+  }
+  .header .link {
+    display: block;
+  }
+  .link-show {
+    display: none;
+  }
+  .landing .intro-text h1 {
+    font-size: 30px !important;
+    width: 80% !important;
+    padding-left: 25px;
+  }
+  .landing .intro-text h1 span {
+    font-size: 35px !important;
+  }
+  .landing .intro-text p {
+    font-size: 15px !important;
+    width: 350px !important;
+    padding-left: 25px;
+    z-index: 1;
+  }
+  .intro-text {
+    margin-left: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 700px !important;
+    margin-top: -205px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .link {
+    display: block;
+  }
+  .link-show {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .header .link {
+    display: none;
+  }
+  .link-show {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .header .link {
+    display: none;
+  }
+}
+
+.header {
+  padding: 20px;
+}
+
+.header img {
+  width: 150px;
+}
+
+.header .logo {
+  width: 60px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .link:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+
+.header .link .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.header .link .icon span {
+  background-color: #001e38;
+  margin-bottom: 5px;
+  height: 2px;
+  position: relative;
+}
+
+.header .link .icon span:first-child {
+  width: 100%;
+}
+
+.header .link .icon span:nth-child(2) {
+  width: 60%;
+  transition: 0.3s;
+}
+
+.header .link .icon span:last-child {
+  width: 100%;
+}
+
+.header .link {
+  position: relative;
+}
+
+.header .link ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  position: absolute;
+  border-radius: 10px;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 1;
+}
+
+.header .link ul::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 5px;
+  top: -19px;
+}
+
+.header .link ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.header .link ul li a:hover {
+  padding-left: 25px;
+}
+
+.header .link ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+
+.show {
+  display: block !important;
+}
+
+.header .link-show a {
+  text-decoration: none;
+  color: #333;
+  padding: 15px;
+}
+
+.header .link-show a:hover {
+  color: white;
+}
+
+.custom-shape-divider-bottom-1678984849 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1678984849 svg {
+  position: relative;
+  display: block;
+  width: calc(164% + 1.3px);
+  height: 378px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1678984849 .shape-fill {
+  fill: #60f4a0;
+}
+
+.landing {
+  height: calc(100vh - 113px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  /* flex-direction: row; */
+}
+
+.intro-text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+
+.landing .intro-text h1 {
+  margin: 0;
+  font-size: 40px;
+  color: white;
+  width: 70%;
+}
+
+.landing .intro-text h1 span {
+  color: #60f4a0;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.landing .intro-text p {
+  font-size: 18px;
+  line-height: 2;
+  color: #ddd;
+  width: 60%;
+}
+
+.imgg {
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.landing img {
+  width: 260px;
+  transform: rotate(-20deg);
+  transition: transform 2s ease;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform-origin: bottom right;
+    transform: rotate(0deg);
+  }
+  to {
+    transform-origin: 100px bottom -100px;
+    transform: rotate(360deg);
+  }
+}
