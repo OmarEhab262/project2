@@ -121,7 +121,7 @@ window.addEventListener("load", function () {
       });
 
       setTimeout(function () {
-        const url = `index.html`;
+        const url = `index2.html`;
         window.location.href = url;
       }, 2000);
     }
