@@ -46,7 +46,7 @@ window.addEventListener("load", function () {
         timer: 2000,
       });
       setTimeout(function () {
-        const url = `index.html`;
+        const url = `index2.html`;
         window.location.href = url;
       }, 2000);
     }
