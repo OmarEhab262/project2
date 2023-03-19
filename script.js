@@ -5,9 +5,9 @@ icon.addEventListener("click", () => {
 });
 const imageElement = document.getElementById("myImage");
 const imageSources = [
-  "images/71FuI8YvCNL._AC_SX679_.png",
-  "images/81sxRBhe2sS._AC_SX466_-removebg-preview.png",
-  "images/71+fj-NuMwL._AC_SX466_-removebg-preview.png",
+  "images/iphone1.png",
+  "images/ipad3.png",
+  "images/iwatch3.png",
 ];
 let currentIndex = 0;
 let timerId;
@@ -200,5 +200,32 @@ buttons.forEach((button) => {
     contt.style.display = "block";
     dddds.innerHTML = cont;
     dddds.style.display = "block";
+  });
+});
+
+const counters = document.querySelectorAll(
+  ".NEWS .container .cards-About .card"
+);
+
+// Loop through each element and add a click event listener to its button
+counters.forEach((counter) => {
+  const incrementButton = counter.querySelector(".like");
+  const counterValue = counter.querySelector(".ttt");
+
+  let isIncrementing = true; // Initialize the state of the button to "increment"
+
+  // Add a click event listener to the button
+  incrementButton.addEventListener("click", () => {
+    // Get the current count value, or 0 if it's not a valid integer
+    const count = parseInt(counterValue.textContent) || 0;
+
+    // Toggle the state of the button and update the count
+    if (isIncrementing) {
+      counterValue.textContent = count + 1;
+    } else {
+      counterValue.textContent = count - 1;
+    }
+
+    isIncrementing = !isIncrementing; // Toggle the state of the button
   });
 });
