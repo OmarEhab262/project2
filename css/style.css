@@ -93,6 +93,30 @@ html {
     width: 700px !important;
     margin-top: -205px;
   }
+  .boxes .imac .immm img {
+    width: 250px !important;
+  }
+  .boxes .iwatch .immm img,
+  .boxes .ipad .immm img,
+  .boxes .iphone .immm img {
+    width: 150px !important;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .zero {
+    background-color: #001e38;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -660,4 +684,155 @@ html {
 
 .header .container {
   position: relative;
+}
+
+.NEWS .container .main-title p {
+  text-align: center;
+}
+
+.NEWS .container .cards-About {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.NEWS .container .cards-About .card {
+  overflow: hidden;
+  width: 350px;
+  height: 520px;
+  background-color: #001e38;
+  border-radius: 15px;
+  color: #ddd;
+  margin: 15px;
+}
+
+.NEWS .container .cards-About .card p {
+  margin: 5px;
+}
+
+.NEWS .container .cards-About .card img {
+  width: 400px !important;
+  height: 220px !important;
+  margin-left: -5%;
+}
+
+.NEWS .container .cards-About .card .info .interaction .head .imoj span {
+  margin-left: 5px;
+  font-size: 17px;
+}
+
+.NEWS .container .cards-About .card .info .interaction .head .imoj {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.NEWS .container .cards-About .card .info .interaction .head {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin: 15px;
+}
+
+.NEWS .container .cards-About .card .info .interaction .head .fa-thumbs-up {
+  color: blue;
+  font-size: 25px;
+}
+
+.NEWS .container .cards-About .card .info .interaction .head .fa-heart {
+  font-size: 25px;
+  color: red;
+  margin-left: -5px;
+}
+
+.NEWS .container .cards-About .card .info .interaction .head .fa-face-surprise {
+  font-size: 25px;
+  color: yellow;
+  margin-left: -5px;
+}
+
+.NEWS .container .cards-About .card .info .interaction .head .coment {
+  display: flex;
+  flex-direction: row;
+}
+
+.NEWS .container .cards-About .card .info .interaction .head .coment .num {
+  padding: 0 5px;
+}
+
+.NEWS .container .cards-About .card .info .interaction .center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.NEWS .container .cards-About .card .info .interaction .center i {
+  color: #60f4a0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.NEWS .container .cards-About .card .info .interaction .center span {
+  color: #60f4a0;
+  margin-left: -50px;
+  cursor: pointer;
+}
+
+.NEWS
+  .container
+  .cards-About
+  .card
+  .info
+  .interaction
+  .foot
+  input[type="text"] {
+  width: 70%;
+  border-radius: 5px;
+  padding: 5px;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  background-color: #0a3154;
+  color: white !important;
+}
+
+.NEWS
+  .container
+  .cards-About
+  .card
+  .info
+  .interaction
+  .foot
+  input[type="submit"] {
+  width: 20%;
+  border-radius: 5px;
+  padding: 5px;
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #0a3154;
+  color: #ddd;
+}
+
+.NEWS
+  .container
+  .cards-About
+  .card
+  .info
+  .interaction
+  .foot
+  input[type="submit"]:hover {
+  background-color: #60f4a0;
+  color: #001e38;
 }
